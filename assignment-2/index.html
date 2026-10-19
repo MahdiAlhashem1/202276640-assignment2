@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mahdi Al Hashem's personal portfolio: a student and beginner web developer learning HTML, CSS, and JavaScript.">
+    <meta name="color-scheme" content="light dark">
+    <title>Mahdi Al Hashem — Interactive Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/core.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a href="#home" class="wordmark" aria-label="Mahdi — home">mahdi<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" hidden>
+        <span id="theme-symbol" aria-hidden="true">◐</span><span id="theme-label">Dark mode</span>
+      </button>
+    </header>
+    <main id="main">
+      <section class="hero wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> STUDENT AND BEGINNER WEB DEVELOPER</p>
+          <h1 id="hero-title">Hello, I’m<br>Mahdi Al<br><em>Hashem.</em></h1>
+          <p class="hero-description">I enjoy learning web development and creating simple, useful websites.</p>
+          <a class="button primary" href="#projects">View my projects <span aria-hidden="true">↘</span></a>
+          <p class="hero-note">Built with HTML, CSS &amp; a little curiosity.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="art-label">IDEA → INTERACTION</span>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-window">
+            <div class="window-toolbar">
+              <i></i>
+              <i></i>
+              <i></i>
+              <span>portfolio / in progress</span>
+            </div>
+            <div class="art-window-body">
+              <span class="tiny-label">HELLO, WORLD.</span>
+              <strong>Make it<br>meaningful<span>.</span></strong>
+              <div class="art-line"></div>
+              <div class="art-line short"></div>
+              <div class="art-pill">Ideas into interfaces ↗</div>
+            </div>
+          </div>
+          <div class="code-sticker"><span>&lt;idea&gt;</span><br> build. test. refine.<br><span>&lt;/idea&gt;</span></div>
+          <span class="art-star">✳</span>
+          <span class="art-caption">DESIGNED TO BE EXPLORED — 01</span>
+        </div>
+      </section>
+      <section class="work-section section wrap" id="projects" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / PROJECTS</p>
+            <h2 id="work-title">Small details.<br>Better experiences.</h2>
+          </div>
+          <p>My Assignment 1 projects plus three feature studies.<br>Search, filter, or sort to explore them.</p>
+        </div>
+        <noscript>
+          <p class="notice">JavaScript is turned off. You can read the portfolio below; enable JavaScript to search, filter, change themes, or validate the contact demo.</p>
+        </noscript>
+        <div class="project-controls" id="project-controls" hidden>
+          <div class="filters" role="group" aria-label="Filter projects by category">
+            <button type="button" data-filter="all" aria-pressed="true">All work <span>05</span></button>
+            <button type="button" data-filter="front-end" aria-pressed="false">Front-end</button>
+            <button type="button" data-filter="ui-systems" aria-pressed="false">UI systems</button>
+            <button type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+            <button type="button" data-filter="concept" aria-pressed="false">Concepts</button>
+          </div>
+          <div class="search-row">
+            <div class="search-field">
+              <label for="project-search">Search the work</label>
+              <input id="project-search" type="search" placeholder="Try “planner” or “validation”" maxlength="100" aria-controls="project-grid">
+            </div>
+            <div class="sort-field">
+              <label for="project-sort">Sort by</label>
+              <select id="project-sort"><option value="featured">Featured</option><option value="title">Title A–Z</option></select>
+            </div>
+          </div>
+        </div>
+        <p class="results-count" id="results-count" role="status" aria-live="polite" aria-atomic="true">5 projects to explore</p>
+        <div class="project-grid" id="project-grid">
+          <article class="project-card" data-project="portfolio" data-category="front-end" data-order="0" data-keywords="html css responsive mobile grid accessibility portfolio assignment 1">
+            <div class="project-art portfolio-art">
+              <img src="assets/images/project-one.svg" alt="Illustration of the portfolio website layout" width="800" height="450" loading="lazy">
+              <span class="art-index" aria-hidden="true">01</span>
+            </div>
+            <div class="card-heading">
+              <h3>Personal Portfolio</h3>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p>A responsive website that introduces me, my skills, and my projects.</p>
+            <div class="card-bottom">
+              <span class="tag">Front-end</span>
+              <button class="text-button project-open" data-open="portfolio" type="button" hidden>View details<span class="sr-only">: Personal Portfolio</span> ↗</button>
+            </div>
+          </article>
+          <article class="project-card" data-project="planner" data-category="concept" data-order="1" data-keywords="study planner students tasks deadlines organize concept idea assignment 1">
+            <div class="project-art planner-art">
+              <img src="assets/images/project-two.svg" alt="Illustration of a study planner with tasks and deadlines" width="800" height="450" loading="lazy">
+              <span class="art-index" aria-hidden="true">02</span>
+            </div>
+            <div class="card-heading">
+              <h3>Study Planner</h3>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p>A simple project idea that helps students organize tasks and deadlines.</p>
+            <div class="card-bottom">
+              <span class="tag">Concept</span>
+              <button class="text-button project-open" data-open="planner" type="button" hidden>View details<span class="sr-only">: Study Planner</span> ↗</button>
+            </div>
+          </article>
+          <article class="project-card" data-project="theme" data-category="ui-systems" data-order="2" data-keywords="css theme light dark localstorage preferences colors tokens">
+            <div class="project-art theme-art" aria-hidden="true">
+              <div class="theme-demo">
+                <div class="theme-half light-half">
+                  <span>Aa</span>
+                  <i></i>
+                  <small>LIGHT</small>
+                </div>
+                <div class="theme-half dark-half">
+                  <span>Aa</span>
+                  <i></i>
+                  <small>DARK</small>
+                </div>
+                <div class="theme-switch">↔</div>
+              </div>
+              <span class="art-index">03</span>
+            </div>
+            <div class="card-heading">
+              <h3>A different light</h3>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p>Two considered color palettes. One preference that stays with you.</p>
+            <div class="card-bottom">
+              <span class="tag">UI systems</span>
+              <button class="text-button project-open" data-open="theme" type="button" hidden>View details<span class="sr-only">: A different light</span> ↗</button>
+            </div>
+          </article>
+          <article class="project-card" data-project="explorer" data-category="javascript" data-order="3" data-keywords="javascript search filter sort projects empty state discover">
+            <div class="project-art explorer-art" aria-hidden="true">
+              <div class="explorer-demo">
+                <div class="demo-search">⌕   Find something good.</div>
+                <div class="demo-filter">
+                  <span>All</span>
+                  <span>Ideas</span>
+                  <span>Interfaces</span>
+                </div>
+                <div class="demo-tiles">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+              <span class="art-index">04</span>
+            </div>
+            <div class="card-heading">
+              <h3>Find your focus</h3>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p>Live search and category filters that make exploration feel effortless.</p>
+            <div class="card-bottom">
+              <span class="tag">JavaScript</span>
+              <button class="text-button project-open" data-open="explorer" type="button" hidden>View details<span class="sr-only">: Find your focus</span> ↗</button>
+            </div>
+          </article>
+          <article class="project-card" data-project="contact" data-category="javascript" data-order="4" data-keywords="javascript form validation email contact errors feedback accessibility">
+            <div class="project-art contact-art" aria-hidden="true">
+              <div class="message-demo">
+                <span class="message-check">✓</span>
+                <strong>A little feedback.<br>A lot of clarity.</strong>
+                <div class="message-line"></div>
+                <small>Good interfaces keep you informed.</small>
+              </div>
+              <span class="art-index">05</span>
+            </div>
+            <div class="card-heading">
+              <h3>Every input matters</h3>
+              <span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <p>Helpful validation and honest feedback, from the first field to the last.</p>
+            <div class="card-bottom">
+              <span class="tag">JavaScript</span>
+              <button class="text-button project-open" data-open="contact" type="button" hidden>View details<span class="sr-only">: Every input matters</span> ↗</button>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>No matching work yet.</h3>
+          <p>Try a different search or reset the filters to see all five projects.</p>
+          <button class="button secondary" id="reset-filters" type="button">Reset filters</button>
+        </div>
+      </section>
+      <section class="about-section section" id="about" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div>
+            <p class="eyebrow">02 / ABOUT ME</p>
+            <h2 id="about-title">Learning by<br><em>making.</em></h2>
+          </div>
+          <div class="about-copy">
+            <p class="large-copy">I am a student interested in web development and user-friendly design.</p>
+            <p>I am currently learning HTML, CSS, and JavaScript through practical projects. My goal is to continue improving my skills and build useful digital experiences.</p>
+            <h3 class="skills-title">My Skills</h3>
+            <ul class="skill-list" aria-label="My skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>UI/UX designing</li>
+            </ul>
+            <details>
+              <summary>What changed since Assignment 1 <span aria-hidden="true">+</span></summary>
+              <p>Assignment 1 had two static project cards, a dark-mode button that forgot your choice on reload, and a form that showed “Thank you” without checking anything. Now projects can be searched, filtered, sorted, and opened for details; the theme is remembered in this browser; and the contact demo validates each field and explains what to fix. Everything runs locally without an external API.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section section wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">03 / START A CONVERSATION</p>
+          <h2 id="contact-title">Good things<br>start with<br><em>hello.</em></h2>
+          <p>Have an idea worth exploring?<br>Try the contact form interaction.</p>
+          <div class="demo-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p><strong>Contact form demo</strong><br>This form validates your message locally. It does not send, save, or email your information.</p>
+          </div>
+        </div>
+        <form id="contact-form" novalidate>
+          <p class="form-intro">All fields are required.</p>
+          <div class="form-field">
+            <label for="contact-name">Your name</label>
+            <input id="contact-name" name="name" autocomplete="name" required minlength="2" maxlength="60" placeholder="What should I call you?" aria-describedby="name-error">
+            <p class="field-error" id="name-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="contact-email">Email address</label>
+            <input id="contact-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254" placeholder="you@example.com" aria-describedby="email-error">
+            <p class="field-error" id="email-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <div class="label-row">
+              <label for="contact-message">Your message</label>
+              <span id="message-count" aria-hidden="true">0 / 1000</span>
+            </div>
+            <textarea id="contact-message" name="message" rows="5" minlength="20" maxlength="1000" required placeholder="Tell me a little about your idea…" aria-describedby="message-hint message-error"></textarea>
+            <p class="field-hint" id="message-hint">Write between 20 and 1,000 characters.</p>
+            <p class="field-error" id="message-error" hidden></p>
+          </div>
+          <button class="button primary" id="contact-submit" type="submit" disabled>Check my message <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+          <noscript>
+            <p class="notice">Enable JavaScript to use this local validation demo. No message will be sent.</p>
+          </noscript>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="wordmark" href="#home" aria-label="Back to top">mahdi<span>.</span></a>
+      <p>© <span id="year">2026</span> Mahdi Al Hashem</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+    <p class="toast" id="theme-feedback" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header">
+        <p class="eyebrow" id="dialog-category"></p>
+        <button class="close-dialog" id="close-dialog" type="button" aria-label="Close project details" autofocus>×</button>
+      </div>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-summary"></p>
+      <h3>The decisions behind it</h3>
+      <ul id="dialog-highlights"></ul>
+      <p class="dialog-stack" id="dialog-stack"></p>
+      <a class="button primary" id="dialog-action" href="#projects">Try the interaction ↗</a>
+    </dialog>
+  </body>
+</html>

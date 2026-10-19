@@ -1,0 +1,14 @@
+{
+  "name": "mahdi-interactive-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio; Node dependencies are optional development tools only.",
+  "scripts": {
+    "test": "node --test tests/core.test.cjs",
+    "test:browser": "node tests/browser-tests.cjs",
+    "check": "node --check js/core.js && node --check js/script.js"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
